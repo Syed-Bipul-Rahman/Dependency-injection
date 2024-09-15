@@ -48,6 +48,17 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
 //dagger dependency injection
-    implementation (libs.dagger)
-    annotationProcessor (libs.dagger.compiler)
+//    implementation (libs.dagger)
+//    annotationProcessor (libs.dagger.compiler)
+
+implementation("com.google.dagger:dagger:2.52")
+implementation("com.google.dagger:dagger-android:2.52")
+kapt("com.google.dagger:dagger-compiler:2.52")
+kapt("com.google.dagger:dagger-android-processor:2.52")
+
+    
+//    implementation 'com.google.dagger:dagger:2.x'
+//    kapt 'com.google.dagger:dagger-compiler:2.x'
+//    implementation 'com.google.dagger:dagger-android:2.x'
+//    kapt 'com.google.dagger:dagger-android-processor:2.x'
 }
